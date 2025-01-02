@@ -15,8 +15,8 @@
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png"> -->
     <!-- <link rel="manifest" href="assets/images/icons/site.html"> -->
     <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="assets/images/icons/ool_no.png" type="image/jpg">
-    <meta name="apple-mobile-web-app-title" content="Opulentia Orbis">
+    <link rel="shortcut icon" href="assets/images/icons/ool_no.png">
+    <meta name="apple-mobile-web-app-title" content="OpulentiaOrbis">
     <meta name="application-name" content="Opulentia">
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
@@ -38,118 +38,15 @@
 
     <style>
         .img-wrapper {
-            height: 200px; /* Fixed height */
-            overflow: hidden; /* Ensures no overflow */
-        }
-        .img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        body {
-        font-family: 'Albert Sans', sans-serif; /* Primary font */
-    }
-
-    h1 {
-        font-family: 'Outfit', sans-serif; /* Different font for headings */
-        font-weight: 700; /* Bold weight */
-    }
-
-    p {
-        font-family: 'PT Serif', serif; /* Serif font for paragraphs */
-       font-size: medium;
-    }
-
-   /* Scrollbar container */
-::-webkit-scrollbar {
-    width: 10px; /* Width of the vertical scrollbar */
-    height: 15px; /* Height of the horizontal scrollbar */
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Ensures no overflow */
 }
-
-/* Scrollbar track */
-::-webkit-scrollbar-track {
-    background: #ebe7e7; /* Background color of the track */
-    border-radius: 8px; /* Optional rounded corners */
-}
-
-/* Scrollbar thumb */
-::-webkit-scrollbar-thumb {
-    background: #a9a8a8; /* Color of the scrollbar thumb */
-    border-radius: 6px; /* Optional rounded corners */
-}
-
-/* Hover effect on the thumb */
-::-webkit-scrollbar-thumb:hover {
-    background: #6d6c6c; /* Darker shade on hover */
-}
-
-/* General styles for the headers */
-.intro h3 {
-    font-family: 'Albert Sans', sans-serif; /* Example font family */
-    margin: 0;
-}
-
-/* Default styles for larger screens */
-
-    .intro .title h3{
-        font-size: 4rem;
-    }
-    .intro .content h3{
-        font-size: 5.5rem;
-    }
-    .intro .price h3 {
-        font-size: 4rem; /* Reduce font size for tablets */
-    }
-
-
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-    .intro .title h3{
-        font-size: 3.5rem;
-    }
-    .intro .content h3{
-        font-size: 4.5rem;
-    }
-    .intro .price h3 {
-        font-size: 3.5rem; /* Reduce font size for tablets */
-    }
-}
-
-/* Small screens (mobile phones) */
-@media (max-width: 576px) {
-    .intro .title h3 {
-        font-size: 2.5rem; /* Smaller font for titles on mobile */
-        color: #ffffff; /* Ensure readability */
-    }
-
-    .intro .content h3 {
-        font-size: 3.2rem; /* Smaller font for content on mobile */
-        line-height: 1.4; /* Adjust line height for better spacing */
-    }
-
-    .intro .price h3 {
-        font-size: 2.5rem; /* Adjust price section font size */
-        color: #ffddcc; /* Light color for better visibility */
-    }
-
-    .intro .action .btn {
-        font-size: 1.5rem; /* Adjust button text size */
-        padding: 1.2rem 1.5rem; /* Adjust padding for buttons */
-        border-radius: 10%;
-    }
-    #dynamic-slide {
+.img-wrapper img {
     width: 100%;
-    height: 500px; /* Adjust to your requirement */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    transition: background-image 1s ease-in-out; /* Smooth background image change */
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
-
-}
-
 
     </style>
 </head>
@@ -178,7 +75,7 @@
                         </button>
 
                         <a href="#" class="logo my-3">
-                            <img src="assets/images/icons/ool_no.png" alt="Logo" width="220px" >
+                            <img src="assets/images/demos/demo-21/logo1.png" alt="Logo" width="100" >
                         </a>
 
                         <nav class="main-nav">
@@ -626,27 +523,6 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/demos/demo-21.js"></script>
-    <script>
-       document.addEventListener('DOMContentLoaded', function () {
-    const slide = document.getElementById('dynamic-slide');
-    const images = [
-        'assets/images/demos/demo-21/slider/slide-1.jpeg',
-        'assets/images/demos/demo-21/slider/slide-2.jpg',
-        'assets/images/demos/demo-21/slider/slide-3.jpg',
-    ];
-    let currentIndex = 0;
-
-    function changeBackground() {
-        currentIndex = (currentIndex + 1) % images.length; // Cycle through the images
-        slide.style.backgroundImage = `url(${images[currentIndex]})`;
-    }
-
-    // Change image every 5 seconds
-    setInterval(changeBackground, 5000);
-});
-
-
-    </script>
 </body>
 
 

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
     <title>OPULENTIA ORBIS</title>
     <meta charset="UTF-8">
@@ -9,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="keywords" content="HTML5 Template">
-    <meta name="description" content="OpulentiaOrbis">
+    <meta name="description" content="Opulentia Orbis">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png"> -->
@@ -17,12 +15,18 @@
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png"> -->
     <!-- <link rel="manifest" href="assets/images/icons/site.html"> -->
     <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="assets/images/icons/logo.png">
-    <meta name="apple-mobile-web-app-title" content="OpulentiaOrbis">
+    <link rel="shortcut icon" href="assets/images/icons/OOL.jpg" type="image/jpg">
+    <meta name="apple-mobile-web-app-title" content="Opulentia Orbis">
     <meta name="application-name" content="Opulentia">
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- Embed Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <!-- Plugins CSS File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
@@ -34,26 +38,127 @@
 
     <style>
         .img-wrapper {
-    height: 200px; /* Fixed height */
-    overflow: hidden; /* Ensures no overflow */
+            height: 200px; /* Fixed height */
+            overflow: hidden; /* Ensures no overflow */
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        body {
+        font-family: 'Albert Sans', sans-serif; /* Primary font */
+    }
+
+    h1 {
+        font-family: 'Outfit', sans-serif; /* Different font for headings */
+        font-weight: 700; /* Bold weight */
+    }
+
+    p {
+        font-family: 'PT Serif', serif; /* Serif font for paragraphs */
+       font-size: medium;
+    }
+
+   /* Scrollbar container */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 15px; /* Height of the horizontal scrollbar */
 }
-.img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #ebe7e7; /* Background color of the track */
+    border-radius: 8px; /* Optional rounded corners */
 }
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #a9a8a8; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Optional rounded corners */
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #6d6c6c; /* Darker shade on hover */
+}
+
+/* General styles for the headers */
+.intro h3 {
+    font-family: 'Albert Sans', sans-serif; /* Example font family */
+    margin: 0;
+}
+
+/* Default styles for larger screens */
+
+    .intro .title h3{
+        font-size: 4rem;
+    }
+    .intro .content h3{
+        font-size: 5.5rem;
+    }
+    .intro .price h3 {
+        font-size: 4rem; /* Reduce font size for tablets */
+    }
+
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .intro .title h3{
+        font-size: 3.5rem;
+    }
+    .intro .content h3{
+        font-size: 4.5rem;
+    }
+    .intro .price h3 {
+        font-size: 3.5rem; /* Reduce font size for tablets */
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 576px) {
+    .intro .title h3 {
+        font-size: 2.5rem; /* Smaller font for titles on mobile */
+        color: #ffffff; /* Ensure readability */
+    }
+
+    .intro .content h3 {
+        font-size: 3.2rem; /* Smaller font for content on mobile */
+        line-height: 1.4; /* Adjust line height for better spacing */
+    }
+
+    .intro .price h3 {
+        font-size: 2.5rem; /* Adjust price section font size */
+        color: #ffddcc; /* Light color for better visibility */
+    }
+
+    .intro .action .btn {
+        font-size: 1.5rem; /* Adjust button text size */
+        padding: 1.2rem 1.5rem; /* Adjust padding for buttons */
+        border-radius: 10%;
+    }
+    .intro-slide {
+    /* Adjust to your desired height */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
+}
+
+}
+
 
     </style>
-
-    
 </head>
+
 <body>
     <div class="page-wrapper">
-        <div class="notification" style="background-image: url(assets/images/demos/demo-21/notification-back.jpg)">
+        <div class="notification" style="background-image: url(assets/images/demos/demo-21/notification-back.jpg)" >
             <div class="notify-content">
-                <h3>operation@opulentiaorbis.com</h3>
+                <img src="assets/images/icons/email-icon.png" style="display:inline-block" alt="Email Icon" width="24" height="24">
+                <h3 style="display: inline; font-size: medium;">operation@opulentiaorbis.com</h3>
             </div>
+            
             
         </div>
         <header class="header">
@@ -70,41 +175,34 @@
                         </button>
 
                         <a href="#" class="logo my-3">
-                            <img src="assets/images/demos/demo-21/logo1.png" alt="Logo" width="100" >
+                            <img src="assets/images/icons/OOL.jpg" alt="Logo" width="220px" >
                         </a>
 
                         <nav class="main-nav">
                             <ul class="menu sf-arrows">
-                                <li class="megamenu-container active">
-                                    <a href="#" class="">Home</a>
-
-                                  
-                                </li>
-                                <li>
-                                    <a href="#" class="">Shop</a>
-
+                                <li class="">
+                                    <a href="#home" class="">Home</a>
+                                    
                                     
                                 </li>
                                 <li>
-                                    <a href="#" class="">Product</a>
+                                    <a href="#about" class="">About</a>
+
+                                  
+                                </li>
+                                
+                                <li>
+                                    <a href="#products" class="">Products</a>
 
                                    
                                 </li>
                                 <li>
-                                    <a href="#" class="">Pages</a>
+                                    <a href="#contact" class="">Contact Us</a>
 
-                                    
+                                   
                                 </li>
-                                <li>
-                                    <a href="#" class="">Blog</a>
-
-                                  
-                                </li>
-                                <li>
-                                    <a href="#" class="">Elements</a>
-
-                                  
-                                </li>
+                               
+                                
                             </ul><!-- End .menu -->
                         </nav><!-- End .main-nav -->
                     </div><!-- End .header-left -->
@@ -115,62 +213,43 @@
         </header><!-- End .header -->
 
         <main class="main">
-            <div class="intro-slider-container mb-5">
-                <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl" 
-                    data-owl-options='{
-                        "dots": true,
-                        "nav": false, 
-                        "responsive": {
-                            "1200": {
-                                "nav": false,
-                                "dots": false
-                            }
-                        }
-                    }'>
-                    <div class="intro-slide" style="background-image: url(assets/images/demos/demo-21/slider/slide-1.jpeg);">
-                        <div class="container intro-content">
-                            <div class="row">
-                                <div class="intro">
-                                    <div class="title">
-                                        <h3 style="color: beige;">INDUSTRIAL SOLUTIONS</h3>
-                                    </div>
-                                    <div class="content">
-                                        <h3>QUALITY CHEMICALS</h3>
-                                        <h3>AND MINING EQUIPMENT</h3>
-                                    </div>
-                                    <div class="price">
-                                        <h3 style="color: bisque;">OPTIMIZE YOUR OPERATIONS</h3>
-                                    </div>
-                                    <div class="action">
-                                        <a href="category.html" class="btn btn-primary">
-                                            <span>LEARN MORE</span>
-                                        </a>
-                                    </div>
+            <div class="intro-slider-container mb-5" id="home">
+                <div class="intro-slide" id="dynamic-slide" style="background-image: url('assets/images/demos/demo-21/slider/slide-1.jpeg');">
+                    <div class="container intro-content">
+                        <div class="row">
+                            <div class="intro">
+                                <div class="title">
+                                    <h3 style="color: beige;">INDUSTRIAL SOLUTIONS</h3>
                                 </div>
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                    </div><!-- End .intro-slide -->
-                    
-
-                   
-
-
-                    
-                </div><!-- End .intro-slider owl-carousel owl-simple -->
-
-                <span class="slider-loader"></span><!-- End .slider-loader -->
-            </div><!-- End .intro-slider-container -->
+                                <div class="content mt-2">
+                                    <h3>QUALITY CHEMICALS</h3>
+                                    <h3>AND MINING EQUIPMENT</h3>
+                                </div>
+                                <div class="price mt-2">
+                                    <h3 style="color: cornsilk">OPTIMIZE YOUR OPERATIONS</h3>
+                                </div>
+                                <div class="action">
+                                    <a href="category.html" class="btn btn-primary">
+                                        <span>LEARN MORE</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
 
 
            
 
-            <div class="page-content pb-3">
+            <div class="page-content pb-3" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
                             <div class="about-text text-center mt-3">
                                 <h3 class=" text-center mb-2">About Us</h3><!-- End .title text-center mb-2 -->
-                                <p>Welcome to OpulentiaOrbis, a leading offshore trading company specializing in the procurement and supply of high-quality products for the mining, metallurgy, and industrial chemicals sectors. With a commitment to excellence and a reputation for reliability, we deliver tailored solutions designed to meet the unique needs of our clients across the globe. </p>
+                                <p>Welcome to Opulentia Orbis, a leading offshore trading company specializing in the procurement and supply of high-quality products for the mining, metallurgy, and industrial chemicals sectors. With a commitment to excellence and a reputation for reliability, we deliver tailored solutions designed to meet the unique needs of our clients across the globe. </p>
                                 
 
                                
@@ -179,7 +258,7 @@
 
 
                         <div class="col-lg-10 offset-lg-1">
-                            <div class="about-text text-center mt-3">
+                            <div class="about-text text-center mt-5">
                                 <h3 class=" text-center mb-2">Our Company</h3><!-- End .title text-center mb-2 -->
                                 <p>Founded with a vision to support the mining and metallurgy industries, OpulntiaOrbis has rapidly established itself as a trusted partner in global trade. Operating offshore, we offer seamless access to a vast network of suppliers and manufacturers, enabling us to provide the essential goods that drive efficiency and success in industrial operations.</p> 
                             
@@ -202,145 +281,103 @@
 
               
 
-                <div class="bg-light-2 pt-6 pb-7 mb-6">
+                <div class="bg-light-2 pt-6 pb-7 mb-6" id="products">
                     <div class="container">
-                        <h3 class=" text-center mb-4">Our Products</h3><!-- End .title text-center mb-2 -->
-
-                        <div class="entry-container max-col-3" data-layout="fitRows">
-                            <div class="entry-item lifestyle shopping col-sm-6 col-md-4 col-lg-3">
+                        <h3 class="text-center mb-4">Our Products</h3>
+                        <div class="row g-4"> <!-- Added .row and gap class -->
+                            <div class="col-sm-6 col-md-4 col-lg-3">
                                 <article class="entry entry-grid text-center">
                                     <figure class="entry-media">
                                         <div class="img-wrapper">
                                             <img src="assets/images/post-1.jfif" alt="image desc">
                                         </div>
-                                        
-                                    </figure><!-- End .entry-media -->
-    
+                                    </figure>
                                     <div class="entry-body">
-                                        
-    
                                         <h2 class="entry-title">
                                             <a href="#">Cyanide</a>
-                                        </h2><!-- End .entry-title -->
-    
-                                        
-    
+                                        </h2>
                                         <div class="entry-content">
-                                            <p>A crucial chemical for gold and silver extraction processes. We supply high-purity cyanide that adheres to the strictest safety and environmental regulations, ensuring safe, efficient, and reliable use in your operations. </p>
-                                            <a href="#" class="read-more">Continue Reading</a>
-                                        </div><!-- End .entry-content -->
-                                    </div><!-- End .entry-body -->
-                                </article><!-- End .entry -->
-                            </div><!-- End .entry-item -->
-    
-                            <div class="entry-item lifestyle col-sm-6 col-md-4 col-lg-3">
-                                <article class="entry entry-grid text-center">
-                                    <figure class="entry-media ">
-                                       <div class="img-wrapper">
-                                            <img src="assets/images/post-2.jpg" alt="image desc" class="fixed-height-img">
+                                            <p>A crucial chemical for gold and silver extraction processes. We supply high-purity cyanide that adheres to the strictest safety and environmental regulations, ensuring safe, efficient, and reliable use in your operations.</p>
+                                        </div>
                                     </div>
-                                    </figure><!-- End .entry-media -->
-    
+                                </article>
+                            </div>
+                
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <article class="entry entry-grid text-center">
+                                    <figure class="entry-media">
+                                        <div class="img-wrapper">
+                                            <img src="assets/images/post-2.jpg" alt="image desc">
+                                        </div>
+                                    </figure>
                                     <div class="entry-body">
-                                       
-    
                                         <h2 class="entry-title">
                                             <a href="#">Facility Equipment</a>
-                                        </h2><!-- End .entry-title -->
-    
-                                       
+                                        </h2>
                                         <div class="entry-content">
-                                            <p> From crushers and mills to screens and processing systems, we offer top-tier equipment that enhances mining and metallurgical processes. Our machinery is sourced from reputable manufacturers, designed to maximize efficiency, reduce operational downtime, and support high productivity in your facility. </p>
-                                            <a href="#" class="read-more">Continue Reading</a>
-                                        </div><!-- End .entry-content -->
-                                    </div><!-- End .entry-body -->
-                                </article><!-- End .entry -->
-                            </div><!-- End .entry-item -->
-    
-                            <div class="entry-item lifestyle fashion col-sm-6 col-md-4 col-lg-3">
+                                            <p>From crushers and mills to screens and processing systems, we offer top-tier equipment that enhances mining and metallurgical processes. Our machinery is sourced from reputable manufacturers, designed to maximize efficiency, reduce operational downtime, and support high productivity in your facility.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <div class="col-sm-6 col-md-4 col-lg-3">
                                 <article class="entry entry-grid text-center">
                                     <figure class="entry-media">
-                                        <div class="owl-carousel owl-simple owl-light owl-nav-inside" data-toggle="owl">
-                                            <div class="img-wrapper">
-                                                <img src="assets/images/post-3.webp" alt="image desc" class="fixed-height-img">
-                                            </div>
-                                          
-                                        </div><!-- End .owl-carousel -->
-                                    </figure><!-- End .entry-media -->
-    
+                                        <div class="img-wrapper">
+                                            <img src="assets/images/post-3.webp" alt="image desc">
+                                        </div>
+                                    </figure>
                                     <div class="entry-body">
-                                        
-    
                                         <h2 class="entry-title">
                                             <a href="#">Explosives</a>
-                                        </h2><!-- End .entry-title -->
-    
-                                       
-    
+                                        </h2>
                                         <div class="entry-content">
                                             <p> We provide a wide variety of industrial explosives for mining applications, ensuring your operations benefit from effective and safe blasting techniques. Our products are sourced in compliance with international safety standards, providing peace of mind for your team and project. </p>
-                                            <a href="#" class="read-more">Continue Reading</a>
-                                        </div><!-- End .entry-content -->
-                                    </div><!-- End .entry-body -->
-                                </article><!-- End .entry -->
-                            </div><!-- End .entry-item -->
-    
-                            <div class="entry-item travel col-sm-6 col-md-4 col-lg-3">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <div class="col-sm-6 col-md-4 col-lg-3">
                                 <article class="entry entry-grid text-center">
                                     <figure class="entry-media">
                                         <div class="img-wrapper">
-                                            <img src="assets/images/post-4.avif" alt="image desc" class="fixed-height-img">
+                                            <img src="assets/images/post-4.avif" alt="image desc">
                                         </div>
-                                    </figure><!-- End .entry-media -->
-    
+                                    </figure>
                                     <div class="entry-body">
-                                       
-    
                                         <h2 class="entry-title">
                                             <a href="#">Steel Balls</a>
-                                        </h2><!-- End .entry-title -->
-    
-                                       
-    
+                                        </h2>
                                         <div class="entry-content">
                                             <p>Essential for milling and grinding operations, our steel balls are high-performance products designed for durability and superior performance. We source these products from top manufacturers, ensuring long-lasting quality for your grinding and processing needs.</p>
-                                            <a href="#" class="read-more">Continue Reading</a>
-                                        </div><!-- End .entry-content -->
-                                    </div><!-- End .entry-body -->
-                                </article><!-- End .entry -->
-                            </div><!-- End .entry-item -->
-    
-                            <div class="entry-item travel hobbies col-sm-6 col-md-4 col-lg-3">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <div class="col-sm-6 col-md-4 col-lg-3">
                                 <article class="entry entry-grid text-center">
                                     <figure class="entry-media">
                                         <div class="img-wrapper">
-                                            <img src="assets/images/post-5.jpg" alt="image desc" class="fixed-height-img">
+                                            <img src="assets/images/post-5.jpg" alt="image desc">
                                         </div>
-                                    </figure><!-- End .entry-media -->
-    
+                                    </figure>
                                     <div class="entry-body">
-                                       
-    
                                         <h2 class="entry-title">
                                             <a href="#">Facility Consumables</a>
-                                        </h2><!-- End .entry-title -->
-    
-                                      
-    
+                                        </h2>
                                         <div class="entry-content">
                                             <p>We supply a comprehensive range of consumables needed for day-to-day mining and industrial chemical operations. These materials are sourced to meet the operational demands of our clients, ensuring that production runs smoothly without interruption. </p>
-                                            <a href="#" class="read-more">Continue Reading</a>
-                                        </div><!-- End .entry-content -->
-                                    </div><!-- End .entry-body -->
-                                </article><!-- End .entry -->
-                            </div><!-- End .entry-item -->
-    
-                           
-                        </div><!-- End .entry-container -->
-
-                       
-                    </div><!-- End .container -->
-                </div><!-- End .bg-light-2 pt-6 pb-6 -->
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
                
                         <div class="page-content">
@@ -350,7 +387,7 @@
                                 
             
                                
-                                <h3 class=" text-center  mb-3">Why Choose OpulentiaOrbis?</h3><!-- End .title text-center -->
+                                <h3 class=" text-center  mb-3">Why Choose Opulentia Orbis?</h3><!-- End .title text-center -->
                                 
                                 <div class="owl-carousel owl-theme owl-testimonials" data-toggle="owl" 
                                     data-owl-options='{
@@ -386,7 +423,7 @@
                                             Uncompromising Quality:
                                             
                                         </cite>
-                                        <p>“  At OpulentiaOrbis, quality is at the core of everything we do. We work exclusively with certified manufacturers and suppliers who adhere to stringent industry standards, ensuring that every product we offer is of the highest caliber. ”</p>
+                                        <p>“  At Opulentia Orbis, quality is at the core of everything we do. We work exclusively with certified manufacturers and suppliers who adhere to stringent industry standards, ensuring that every product we offer is of the highest caliber. ”</p>
             
                                     </blockquote><!-- End .testimonial -->
             
@@ -441,8 +478,8 @@
                         <div class="banner-content">
                             <!-- <h4 class="banner-subtitle text-primary">Our Mission</h4> -->
                             <!-- End .banner-subtitle -->
-                            <h3 class="banner-title text-light d-none d-lg-block">Our Mission</h3><!-- End .banner-title -->
-                            <p style="font-size: medium;" class="d-none d-lg-block text-white">At OpulentiaOrbis, our mission is to be the leading partner in the mining, metallurgy, and industrial chemicals sectors by providing high-quality products and outstanding service. We are committed to driving efficiency, safety, and sustainability in every aspect of our business. Our goal is to support our clients' growth and success by delivering the essential tools and materials needed to thrive in today's competitive marketplace. </p> 
+                            <h3 style="color: azure;" class="banner-title  d-none d-lg-block">Our Mission</h3><!-- End .banner-title -->
+                            <p style="font-size: medium;color: aliceblue;" class="d-none d-lg-block">At Opulentia Orbis, our mission is to be the leading partner in the mining, metallurgy, and industrial chemicals sectors by providing high-quality products and outstanding service. We are committed to driving efficiency, safety, and sustainability in every aspect of our business. Our goal is to support our clients' growth and success by delivering the essential tools and materials needed to thrive in today's competitive marketplace. </p> 
 
                            
                         </div><!-- End .banner-content -->
@@ -451,12 +488,12 @@
             </div><!-- End .row -->
 
             
-            <div class="touch-container row justify-content-center mt-3">
+            <div class="touch-container row justify-content-center mt-3" id="contact">
                 <div class="col-md-9 col-lg-7">
                     <div class="text-center">
                     <h3 class=" mb-1">Get In Touch</h3><!-- End .title mb-2 -->
                    
-                    <p class="mb-3">We invite you to learn more about how OpulentiaOrbis can help your business achieve operational excellence. Whether you need specialized chemicals, state-of-the-art equipment, or reliable consumables, we are here to meet your needs with precision and care. Contact us today and let us become your trusted partner in the mining, metallurgy, and industrial chemicals industries.</p>
+                    <p class="mb-3">We invite you to learn more about how Opulentia Orbis can help your business achieve operational excellence. Whether you need specialized chemicals, state-of-the-art equipment, or reliable consumables, we are here to meet your needs with precision and care. Contact us today and let us become your trusted partner in the mining, metallurgy, and industrial chemicals industries.</p>
                     </div><!-- End .text-center -->
 
                     <form action="#" class="contact-form mb-2">
@@ -506,15 +543,15 @@
                     <!-- About Section -->
                     <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
                         <div class="widget widget-about">
-                            <img src="assets/images/demos/demo-21/logo1.png" class="footer-logo" alt="Footer Logo" width="100" height="25">
+                            <img src="assets/images/icons//OOL.jpg" class="footer-logo" alt="Footer Logo" width="200" >
                             <p>Empowering industries with innovative solutions and reliable resources for a sustainable future.</p>
                         </div>
                     </div>
         
                     <!-- Contact Section -->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0 phoneNum">
-                        <span class="widget-about-title">Got Questions? </span> Email us :
-                        <a href="tel:123456789" class="phone-link">operations@opulentiaorbis.com</a>
+                        <p class="widget-about-title" style="font-size: medium;">Got Questions? </> Email us :
+                        <a href="mailto:operations@opulentiaorbis.com" style="font-weight: 300;"><p>operations@opulentiaorbis.com</p></a>
                     </div>
         
                    
@@ -523,7 +560,7 @@
                 <div class="footer-bottom ">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-6">
-                            <p class="footer-copyright mb-0">Copyright © 2025 opulentiaOrbis. All Rights Reserved.</p>
+                            <p class="footer-copyright mb-0">Copyright © 2025 Opulentia Orbis. All Rights Reserved.</p>
                         </div>
                        
                     </div>
@@ -533,7 +570,7 @@
         
 
 
-        <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+        <button style="border-radius: 50%;color: darkolivegreen;" id="scroll-top" title="Back to Top"><i class="icon-arrow-up" ></i></button>
 
 
         <div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
@@ -546,27 +583,24 @@
                 <nav class="mobile-nav">
                     <ul class="mobile-menu">
                         <li class="active">
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
 
                            
                         </li>
                         <li>
-                            <a href="#" class="sf-with-ul">Product</a>
+                            <a href="#about" class="sf-with-ul">About</a>
                             
                         </li>
                         <li>
-                            <a href="#">Pages</a>
+                            <a href="#products">Products</a>
                             
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="#contact">Contact Us</a>
 
                            
                         </li>
-                        <li>
-                            <a href="#">Elements</a>
-                          
-                        </li>
+                        
                     </ul>
                 </nav><!-- End .mobile-nav -->
 
@@ -589,6 +623,26 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/demos/demo-21.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+const slide = document.getElementById('dynamic-slide');
+const images = [
+'assets/images/demos/demo-21/slider/slide-1.jpeg',
+'assets/images/demos/demo-21/slider/slide-2.jpg',
+'assets/images/demos/demo-21/slider/slide-3.jpg',
+];
+let currentIndex = 0;
+
+function changeBackground() {
+currentIndex = (currentIndex + 1) % images.length;
+slide.style.backgroundImage = `url(${images[currentIndex]})`;
+}
+
+// Change image every 5 seconds
+setInterval(changeBackground, 5000);
+});
+
+    </script>
 </body>
 
 
